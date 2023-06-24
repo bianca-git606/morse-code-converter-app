@@ -1,0 +1,289 @@
+:root {
+    --bg-color: hsl(48, 56%, 93%);
+    --red: hsl(11, 89%, 23%);
+    --light-red: hsl(11, 32%, 53%);
+    --ff: 'Syne', sans-serif;
+    --bright-red: hsl(11, 100%, 54%);
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--ff);
+    padding: 3% 7%;
+    padding-top: 0;
+    color: var(--red);
+}
+
+nav {
+    display: flex;
+    position: sticky;
+    padding: 1rem 0;
+    top: 0;
+    background-color: var(--bg-color);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    margin: 0;
+    list-style-type: none;
+    gap: 3.5rem;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: var(--red);
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-link {
+    color: var(--light-red);
+}
+
+.nav-link:hover {
+    color: var(--red);
+    transition: .2s;
+}
+
+.index-main {
+    padding: 13% 0;
+
+}
+
+section {
+    padding: 6% 0 6% 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+h1 {
+    font-size: 5rem;
+    margin: 0;
+}
+
+button {
+    background-color: var(--red);
+    padding: .7rem;
+    color: var(--bg-color);
+    font-family: var(--ff);
+    font-size: 1rem;
+    font-weight: bold;
+    border: .2rem solid var(--red);
+    border-radius: 0 0 1rem 0;
+    margin-top: 2%;
+}
+
+button:hover {
+    color: var(--light-red);
+    transition: .2s;
+}
+
+button:focus {
+    border: .2rem solid var(--bright-red);
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    width: 60%;
+    gap: 2rem;
+    border-color: var(--red);
+    border-radius: 1rem;
+}
+
+label[for^="output"] {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+form {
+    display: grid;
+    place-items: center;
+}
+
+legend {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+textarea {
+    font-family: var(--ff);
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 5rem;
+    resize: vertical;
+    padding: 1rem;
+}
+
+textarea, input {
+    border: .1rem solid transparent;
+    border-radius: 1rem;  
+}
+
+input {
+    padding: .5rem 1rem;
+    margin-top: 0;
+}
+
+textarea:focus, input:focus {
+    outline: none !important;
+    border-color: var(--bright-red);
+}
+
+.output {
+    pointer-events: none;
+}
+
+.textarea {
+    text-align: center;
+    width: 80%;
+    min-height: 40%;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+}
+
+.btn {
+    text-align: center;
+}
+
+.copy-btn {
+    background: none;
+    border: none;
+    color: var(--red);
+    font-weight: 400;
+    cursor: pointer;
+    border: .1rem solid transparent;
+    padding: 0;
+    border-radius: 0;
+}
+
+.copy-btn:hover {
+    border: .1rem solid;
+}
+
+.copy-btn:focus {
+    border-color: var(--bright-red);
+}
+
+img {
+    width: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.hidden span {
+    font-size: .7rem;
+    color: var(--bright-red);
+}
+
+.feedback-heading {
+    font-size: 2rem;
+}
+
+label {
+    margin: 0;
+}
+
+#feedback-section {
+    display: grid;
+    place-items: center;
+}
+
+.feedback-form {
+    width: 70%;
+}
+
+.formField {
+    display: grid;
+    gap: .3rem;
+}
+
+@media (300px <= width <=600px ){
+     .nav-links {
+        gap: .7rem;
+     }
+
+     main {
+        margin-bottom: 6%;
+     }
+
+     section {
+        padding: 15% 0;
+     }
+
+     .logo {
+        font-size: 1rem;
+     }
+     h1, button {
+        margin-bottom: 1.5rem;
+     }
+
+     h2 {
+        padding-top: 10%;
+        font-size: 2.5rem;
+        padding-bottom: .5rem;
+     }
+
+     h1 {
+        font-size: 3.5rem;
+     }
+
+     button {
+        font-weight: 400;
+        font-size: 1rem;
+        padding: .5rem;
+     }
+
+     legend {
+        font-size: 2rem;
+     }
+     fieldset {
+        width: 80%;
+     }
+
+     .feedback-section {
+        padding: 10% 0;
+        margin: 10% 0;
+     }
+    .feedback-form {
+        width: 100%;
+    }
+
+    .feedback-heading {
+        font-size: 1.5rem;
+    }
+    textarea {
+        min-height: 110px;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    textarea, input {
+        padding: .5rem 1 rem;
+    }
+
+    span {
+        font-size: 1rem;
+    }
+
+}

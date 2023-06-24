@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Morse Code Translator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <a class="logo" href="#main-section">Morse Code Translator</a>
+        <ul class="nav-links">
+            <li><a class="nav-link" href="#translator-section">Translator</a></li>
+            <li><a class="nav-link" href="#feedback-section">Feedback</a></li>
+        </ul>
+    </nav>
+    <main class="index-main" id="main-section">
+        <h2>Welcome to</h2>
+        <h1>Morse Code Translator</h1>
+        <a href="#translator-section"><button >Get started</button></a>
+    </main>
+    <section id="translator-section">
+        <form class="container">
+            <fieldset>
+                <legend>Translator</legend>
+                <div class="box">
+                    <div class="textarea">
+                        <textarea id="input"
+                            class="input"
+                            placeholder="Enter the text to be translated. Please add a space or “/” to separate every word."></textarea>
+                        <div class="hidden">
+                            <span>Input empty. Please enter something.</span>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <button type="button" class="translateBtn">Translate</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="textarea"> <textarea class="output" id="output"
+                            placeholder="“?” indicates a character that couldn’t be translated."></textarea>
+                            <button class="copy-btn">Copy <img src="copy.png" alt="copy icon"></button>
+                    </div>
+                    <label for="output">Output</label>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+    <section id="feedback-section">
+        <form class="feedback-form">
+            <fieldset>
+                <legend class="feedback-heading">Got a message?</legend>
+                <div class="formField">
+                    <label for="firstName">First Name:</label>
+                    <input required type="text" id="firstName">
+                </div>
+                <div class="formField">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName">
+                </div>
+                <div class="formField">
+                    <label for="message">Message:</label>
+                    <textarea required name="" id="message" placeholder=""></textarea>
+                </div>
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>
