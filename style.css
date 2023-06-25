@@ -216,7 +216,7 @@ label {
     gap: .3rem;
 }
 
-@media (280px <= width <=600px ){
+@media (min-width: 280px) and (max-width: 600px){
      .nav-links {
         gap: .7rem;
      }
