@@ -149,7 +149,6 @@ textarea:focus, input:focus {
 .textarea {
     text-align: center;
     width: 80%;
-    min-height: 40%;
 }
 
 .box {
